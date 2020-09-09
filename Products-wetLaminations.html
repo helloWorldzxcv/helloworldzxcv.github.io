@@ -94,7 +94,7 @@
 
   </div>
   <!-- footer -->
-  <div class="footer">
+  <div id = "footer" class = "footer">
     <h2> CONTACT DETAILS </h2>
     <!-- <hr width="40%"><br> -->
     <i class="	fa fa-phone"></i> 9810426161,9310426174<br>
@@ -120,19 +120,7 @@
   <script src="myScript.js"></script>
 
   <script>
-    function openCity(evt, cityName) {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-      }
-      tablinks = document.getElementsByClassName("tablinks");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-      }
-      document.getElementById(cityName).style.display = "block";
-      evt.currentTarget.className += " active";
-    }
+    setMinHeigt();
   </script>
 
 </body>

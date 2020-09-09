@@ -98,3 +98,10 @@ function playPauseSlides() {
 //       x.className = "topnav";
 //     }
 //   }
+
+function setMinHeigt(){
+    var navHeight = document.getElementById("myTopnav").offsetHeight;
+    var footerHeight = document.getElementById("footer").offsetHeight;
+    var mainHeight = (window.innerHeight - navHeight -footerHeight);
+    document.getElementById("mainBody").style.minHeight = mainHeight + "px";
+}
