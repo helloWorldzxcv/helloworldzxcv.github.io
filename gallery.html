@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="gallery-style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" type="text/css" href="css.css">
+<title>Ishaan:Gallery</title>
+<style></style>
+</head>
+<body>
+  <div class="topnav" id="myTopnav">
+
+    <!-- <h1 style="color: white;text-align: center;font-size: 3.5vw;font-family: 'Times New Roman', Times, serif; letter-spacing: 3px;">TAARUGEE ENTERPRISES</h1> -->
+    <p style="color: white;text-align: center;font-size: 3.5vw;font-family: 'Times New Roman', Times, serif; letter-spacing: 3px;margin: 1px;margin-top: 20px;">
+      <img src="images/logo/TAARU_GEE_final-1-removebg-preview.png"/>
+      <img src="images/logo/TAARU_GEE_final-removebg-preview.png" height: 50px style="height:120px;float: right; position: absolute;left: 0px;top: 0px;" />
+    </p>
+    <br>
+    <div style="float: none;">
+
+      <a href="index.html" style="width: 20%;height: 3.5%;"><i class="fa fa-fw fa-home"></i>Home</a>
+      <a href="AboutUs.html" style="width: 20%;"><i class="fa fa-fw fa-user"></i>About Us</a>
+      
+      <div class="dropdown" style="width: 20%;height: 48px;overflow: hidden;border-style: none;">
+        <button class="dropbtn" style="width: 100%;overflow: hidden;padding-bottom: 14px;text-align: center;" >
+          <i class="fa fa-cart-plus"></i> Products&nbsp;
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" style="width: 20%;">
+          <a href="Products-wetLaminations.html" class="center">Wet Laminations</a>
+          <a href="Products-thermalLaminations.html" class="center">Thermal laminations</a>
+          <a href="Products-pvcFilms.html" class="center">PVC Films</a>
+          <a href="Products-pidliteAdhesives.html" class="center">Pidlite Adhesives</a>
+          <a href="Products-specialityAdhesives.html" class="center">Speciality Adhesives</a>
+        </div>
+      </div>
+
+      <a href="ContactUs.html" style="width: 20%;"><i class="fa fa-fw fa-envelope"></i> Contact us</a>
+      <a href="gallery.html" style="width: 20%" class="active"><i class="fa fa-camera"></i> Gallery</a>
+      
+    </div>
+  </div>
+  <br>
+  
+
+<div class="center">
+  <h2>Tabbed Image Gallery</h2>
+  <p>Click to enlarge</p>
+</div>
+
+<!-- The four columns -->
+<div class="row">
+  <div class="column">
+    <img src="images/img_2.jpg" alt="Nature" style="width:100%" onclick="enlarge(this);">
+  </div>
+  <div class="column">
+    <img src="images/img_3.jpg" alt="Snow" style="width:100%" onclick="enlarge(this);">
+  </div>
+  <div class="column">
+    <img src="images/img_4.jpg" alt="Mountains" style="width:100%" onclick="enlarge(this);">
+  </div>
+  <div class="column">
+    <img src="images/img_1.jpg" alt="Lights" style="width:100%" onclick="enlarge(this);">
+  </div>
+  <div class="column">
+    <img src="images/img_2.jpg" alt="Nature" style="width:100%" onclick="enlarge(this);">
+  </div>
+  <div class="column">
+    <img src="images/img_3.jpg" alt="Snow" style="width:100%" onclick="enlarge(this);">
+  </div>
+  <div class="column">
+    <img src="images/img_4.jpg" alt="Mountains" style="width:100%" onclick="enlarge(this);">
+  </div>
+  <div class="column">
+    <img src="images/img_1.jpg" alt="Lights" style="width:100%" onclick="enlarge(this);">
+  </div>
+</div><div class="row">
+  <div class="column">
+    <img src="images/img_2.jpg" alt="Nature" style="width:100%" onclick="enlarge(this);">
+  </div>
+  <div class="column">
+    <img src="images/img_3.jpg" alt="Snow" style="width:100%" onclick="enlarge(this);">
+  </div>
+  <div class="column">
+    <img src="images/img_4.jpg" alt="Mountains" style="width:100%" onclick="enlarge(this);">
+  </div>
+  <div class="column">
+    <img src="images/img_1.jpg" alt="Lights" style="width:100%" onclick="enlarge(this);">
+  </div>
+</div>
+
+
+<div class="container" "> 
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function enlarge(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+  
+  imgText.parentElement.style.display = "flex";
+}
+</script>
+
+<script src="myScript.js"></script>
+</body>
+</html>

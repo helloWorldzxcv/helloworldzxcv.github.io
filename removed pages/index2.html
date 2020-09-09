@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ISHAAN</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <link rel="stylesheet" type="text/css" href="cards.css">
+    <link rel="stylesheet" type="text/css" href="associates-horizontal.css">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .topnav a{
+            /* width: 20%; */
+        }
+    </style>
+</head>
+<body >
+<div class="topnav" id="myTopnav">
+    
+    <img src="images/logo3.png" style="width:0.5vw;height:0.5vw;float: left; "> 
+    <h1 style="color: white;text-align: center;font-size: 3.5vw;font-family: 'Times New Roman', Times, serif; letter-spacing: 3px;">TAARUGEE ENTERPRISES</h1> 
+     <br>
+    <div style="float: none;">
+       
+        <a href="#home" class="active" style="width: 22%;"><i class="fa fa-fw fa-home"></i>Home</a>
+        <a href="AboutUs.html"style="width: 22%;"><i class="fa fa-fw fa-user"></i>About Us</a>
+        
+        <div class="dropdown " style="width: 16%;">
+            <!-- <a href="Products-wetLaminations.html" class="dropbtn"><i class="fa fa-cart-plus"></i> Products&nbsp;<i class="fa fa-caret-down"></i></a> -->
+            <button class="dropbtn">
+                <i class="fa fa-cart-plus"></i> Products&nbsp;
+                <i class="fa fa-caret-down"></i>
+              </button>
+            <div class="dropdown-content" style=":hover{background-color: #ddd;color:black;}">
+                <a href="Products-wetLaminations.html">Wet Laminations</a>
+                <a href="#">Thermal laminations</a>
+                <a href="#">PVC Films</a>
+                <a href="#">Pidlite Adhesives</a>
+                <a href="#">Speciality Adhesives</a>
+            </div>
+        </div>
+        
+        <a href="ContactUs.html"style="width: 20%;"><i class="fa fa-fw fa-envelope"></i> Contact us</a>
+        <a href="gallery.html"style="width: 20%;"><i class="fa fa-camera"></i> Gallery</a>
+        <!-- <div class="dropdown">
+            <button class="dropbtn">Dropdown 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>  -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+</div> 
+<br>
+<br>
+<div id="mainBody">
+
+    <div class="galleryContainer">
+        <div class="slideShowContainer">
+            <div id="playPause" onclick="playPauseSlides()"></div>
+            <div onclick="plusSlides(-1)" class="nextPrevBtn leftArrow"><span class="arrow arrowLeft"></span></div>
+            <div onclick="plusSlides(1)" class="nextPrevBtn rightArrow"><span class="arrow arrowRight"></span></div>
+            <div class="captionTextHolder"><p class="captionText slideTextFromTop"></p></div>
+            <div class="imageHolder">
+                <img src="images/img_1.jpg">1366X768
+                <p class="captionText">Caption Text-01</p>
+            </div>
+            <div class="imageHolder">
+                <img src="images/img_2.jpg">
+                <p class="captionText">Caption Text-02</p>
+            </div>
+            <div class="imageHolder">
+                <img src="images/img_3.jpg">
+                <p class="captionText">Caption Text-03</p>
+            </div>
+            <div class="imageHolder">
+                <img src="images/img_4.jpg">
+                <p class="captionText">Caption Text-04</p>
+            </div>
+        </div>
+        <div id="dotsContainer"></div>
+    </div>
+    <br>
+    <div class="frames" style="width: 100%;display: block;">
+        <!-- background-color:#bfe0eb ;background-image: url('images/blue.jpg');background-repeat: no-repeat;background-size: cover; -->
+        <iframe src="frame-about.html" width="80%" height="500vw" style="margin-left: 10%;" ></iframe>
+        <div style=" background-image: linear-gradient(#f3f3f0 , #7bc1d8 );"> 
+            <iframe src="E:\Users\Kartikay Naswa\Desktop\trial1.html" width="80%" height="800vw" style="margin-left: 10%;" style="overflow: hidden;" ></iframe>
+        </div>
+        <div>
+            <h2 style="font-size: 30px;text-align: center;">OUR BUSINESS ASSOCIATES</h2>
+            <hr style="color: darkgrey;width:75%;">
+            
+            <div class="row" >
+                <div class="column">
+                    <img src="images/Associates/UFLEX.jpg" alt="UFLEX" style="max-width: 100%;height: auto;vertical-align: middle;" target="_parent" onclick="window.location.href='https://www.uflexltd.com/'">
+                
+                </div>
+                <div class="column">
+                    <img src="images/Associates/COSMO FILMS.jpg" alt="COSMO FILMS" style="max-width:100%;height: auto;" onclick="window.location.href='https://www.cosmofilms.com/'">
+              </div>
+                <div class="column">
+                    <img src="images/Associates/MAX3.png" alt="MAX" style="max-width:100%;height: auto;">
+                </div>
+                <div class="column">
+                    <img src="images/Associates/Pidlite.png" alt="Pidlite" style="max-width:100%;height: auto;">
+                </div>
+                <div class="column">
+                    <img src="images/Associates/Manish Packaging.png" alt="Manish Packaging" style="max-width:100%;height: auto;">
+                </div>
+                
+            </div>
+        </div>
+    </div> 
+
+
+
+    <!-- footer -->
+    <div class="footer">
+        <hr>
+        <p><h2> CONTACT DETAILS </h2><br>
+<i class="fa fa-home"></i>KH. NO- 819/2 PHIRNI ROAD ,<br> MUNDKA VILLAGE NEW DELHI -110041<br>
+<i class="	fa fa-phone"></i> 9810426161,9310426174<br>
+<i class="	fa fa-envelope-o"></i> INFO@TAARUGEE.COM<br>
+<i class="	fa fa-globe"></i> WWW.TAARUGEE.COM<br>
+</p>
+    </div>
+    <script src="myScript.js"></script>
+</div>
+
+</body>
+
+</html>

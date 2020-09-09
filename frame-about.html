@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css.css">
+        <style>
+            .center-area{
+              margin: auto;
+            }
+            .center-area button {
+              border-radius: 4px;
+              background-color: #5165c9;
+              border: none;
+              color: #ffffff;
+              text-align: center;
+              font-size: 3vw;
+              padding: 2vw;
+              width: 25vw;
+              transition: all 0.5s;
+              cursor: pointer;
+              margin: 5px;
+            }
+            
+            .center-area button span {
+              cursor: pointer;
+              display: inline-block;
+              position: relative;
+              transition: 0.5s;
+            }
+            
+            .center-area button span:after {
+              content: '\00bb';
+              position: absolute;
+              opacity: 0;
+              top: 0;
+              right: -20px;
+              transition: 0.5s;
+            }
+            
+            .center-area button:hover span {
+              padding-right: 25px;
+            }
+            
+            .center-area button:hover span:after {
+              opacity: 1;
+              right: 0;
+            }
+            .center-area about a{
+              color: white;
+              text-decoration: none;
+            }
+
+            </style>
+    </head>
+    <body>
+<div class="about center-area" style="width: 90%;margin-left: 5%;">
+    <div class="heading">
+        <h1 >WELCOME TO TAARUGEE MARKETING</h1>
+    </div>
+    <div style="margin-top: 5%;">
+    <hr style="color: rgb(122, 247, 97);width:75%;">
+    <p>
+        The Gurbaksish Group is highly regarded as one of the pioneer distributors of National and International ranges of quality printing materials and footwear adhesives & inks in India. Originating in 1970 from humble beginings, our commitment to quality and customer satisfaction has enabled us to grow from strength to strength. 
+    </p>
+    <p>
+        The urge to excel and the undying efforts of the group keep the group constantly on the lookout for new & better products which will enrich the Indian footwear and printing industry.
+    </p>
+  </div>
+    <button class="button" ><span><a href="AboutUs.html"target="_parent">view more</a> </span></button>
+</div>
+
+    </body>
+</html>
