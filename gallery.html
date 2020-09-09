@@ -46,65 +46,65 @@
 
     </div>
   </div>
-  <br>
 
+  <div id = "mainBody">
+    <br>
+    <div class="center">
+      <h2>Gallery</h2>
+      <p>Click to enlarge</p>
+    </div>
 
-  <div class="center">
-    <h2>Gallery</h2>
-    <p>Click to enlarge</p>
-  </div>
+    <!-- The four columns -->
+    <div class="row">
+      <div class="column">
+        <img src="images/img_2.jpg" alt="Nature" style="width:100%" onclick="enlarge(this);">
+      </div>
+      <div class="column">
+        <img src="images/img_3.jpg" alt="Snow" style="width:100%" onclick="enlarge(this);">
+      </div>
+      <div class="column">
+        <img src="images/img_4.jpg" alt="Mountains" style="width:100%" onclick="enlarge(this);">
+      </div>
+      <div class="column">
+        <img src="images/img_1.jpg" alt="Lights" style="width:100%" onclick="enlarge(this);">
+      </div>
+      <div class="column">
+        <img src="images/img_2.jpg" alt="Nature" style="width:100%" onclick="enlarge(this);">
+      </div>
+      <div class="column">
+        <img src="images/img_3.jpg" alt="Snow" style="width:100%" onclick="enlarge(this);">
+      </div>
+      <div class="column">
+        <img src="images/img_4.jpg" alt="Mountains" style="width:100%" onclick="enlarge(this);">
+      </div>
+      <div class="column">
+        <img src="images/img_1.jpg" alt="Lights" style="width:100%" onclick="enlarge(this);">
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <img src="images/img_2.jpg" alt="Nature" style="width:100%" onclick="enlarge(this);">
+      </div>
+      <div class="column">
+        <img src="images/img_3.jpg" alt="Snow" style="width:100%" onclick="enlarge(this);">
+      </div>
+      <div class="column">
+        <img src="images/img_4.jpg" alt="Mountains" style="width:100%" onclick="enlarge(this);">
+      </div>
+      <div class="column">
+        <img src="images/img_1.jpg" alt="Lights" style="width:100%" onclick="enlarge(this);">
+      </div>
+    </div>
 
-  <!-- The four columns -->
-  <div class="row">
-    <div class="column">
-      <img src="images/img_2.jpg" alt="Nature" style="width:100%" onclick="enlarge(this);">
+    <div class="container"> 
+    <span onclick=" this.parentElement.style.display='none'" class=" closebtn">&times;</span>
+      <img id="expandedImg" style="width:100%">
+      <div id="imgtext"></div>
     </div>
-    <div class="column">
-      <img src="images/img_3.jpg" alt="Snow" style="width:100%" onclick="enlarge(this);">
-    </div>
-    <div class="column">
-      <img src="images/img_4.jpg" alt="Mountains" style="width:100%" onclick="enlarge(this);">
-    </div>
-    <div class="column">
-      <img src="images/img_1.jpg" alt="Lights" style="width:100%" onclick="enlarge(this);">
-    </div>
-    <div class="column">
-      <img src="images/img_2.jpg" alt="Nature" style="width:100%" onclick="enlarge(this);">
-    </div>
-    <div class="column">
-      <img src="images/img_3.jpg" alt="Snow" style="width:100%" onclick="enlarge(this);">
-    </div>
-    <div class="column">
-      <img src="images/img_4.jpg" alt="Mountains" style="width:100%" onclick="enlarge(this);">
-    </div>
-    <div class="column">
-      <img src="images/img_1.jpg" alt="Lights" style="width:100%" onclick="enlarge(this);">
-    </div>
+    <br>
   </div>
-  <div class="row">
-    <div class="column">
-      <img src="images/img_2.jpg" alt="Nature" style="width:100%" onclick="enlarge(this);">
-    </div>
-    <div class="column">
-      <img src="images/img_3.jpg" alt="Snow" style="width:100%" onclick="enlarge(this);">
-    </div>
-    <div class="column">
-      <img src="images/img_4.jpg" alt="Mountains" style="width:100%" onclick="enlarge(this);">
-    </div>
-    <div class="column">
-      <img src="images/img_1.jpg" alt="Lights" style="width:100%" onclick="enlarge(this);">
-    </div>
-  </div>
-
-  <div class="container"> 
-  <span onclick=" this.parentElement.style.display='none'" class=" closebtn">&times;</span>
-    <img id="expandedImg" style="width:100%">
-    <div id="imgtext"></div>
-  </div>
-  
-  <br>
   <!-- footer -->
-  <div class = "footer">
+  <div id = "footer" class = "footer">
     <h2> CONTACT DETAILS </h2>
     <!-- <hr width = "40%"><br> -->
     <i class = "fa fa-phone"></i> 9810426161,9310426174<br>
@@ -138,6 +138,10 @@
 
       imgText.parentElement.style.display = "flex";
     }
+    var navHeight = document.getElementById("myTopnav").offsetHeight;
+    var footerHeight = document.getElementById("footer").offsetHeight;
+    var mainHeight = (window.innerHeight - navHeight -footerHeight);
+    document.getElementById("mainBody").style.minHeight = mainHeight + "px";
   </script>
 
   <script src="myScript.js"></script>
