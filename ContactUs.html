@@ -88,7 +88,7 @@
               <img src="images/logo/TAARU_GEE_final-removebg-preview.png" style="width:100%">
             </div>
             <div class="column">
-              <form action="mailto:info@taarugee.com" method="get" enctype="text/plain">
+              <form action="mailto:info@taarugee.com" method="POST" enctype="text/plain">
                 <input type="text" id="name" name="name" placeholder="Your name..">
                 <!-- <label for="phone">Phone no.</label> -->
                 <input type="number" id="phone" name="phone" placeholder="Your Phone no..">
@@ -104,7 +104,8 @@
                   <option value="punjab">Others</option>
                 </select>
                 <!-- <label for="subject">Subject</label> -->
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                <input id="subject" name="subject" placeholder="Enter Subject.."></input>
+                <textarea name="body" placeholder="Write something.." style="height:170px"></textarea>
                 <input type="submit" value="Submit">
               </form>
             </div>
