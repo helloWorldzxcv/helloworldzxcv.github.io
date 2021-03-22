@@ -1,72 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
         .glow {
-  font-size: 80px;
-  color: rgb(118, 130, 145);
-  text-align: center;
-  -webkit-animation: glow 0.7s ease-in-out infinite alternate;
-  -moz-animation: glow 0.7s ease-in-out infinite alternate;
-  animation: glow 0.7s ease-in-out infinite alternate;
-}
+            font-size: 80px;
+            color: rgb(118, 130, 145);
+            text-align: center;
+            -webkit-animation: glow 0.7s ease-in-out infinite alternate;
+            -moz-animation: glow 0.7s ease-in-out infinite alternate;
+            animation: glow 0.7s ease-in-out infinite alternate;
+        }
 
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px rgb(255, 255, 255), 0 0 30px #538ea1, 0 0 40px #538ea1, 0 0 50px #538ea1, 0 0 60px #538ea1, 0 0 70px #538ea1;
-  }
-  /*to- #f3c03d ,from- #DAA520 */
-  to {
-    text-shadow: 0 0 20px rgb(255, 255, 255), 0 0 30px #70a7b7, 0 0 40px #70a7b7, 0 0 50px #70a7b7, 0 0 60px #70a7b7, 0 0 70px #70a7b7, 0 0 80px #70a7b7;
-  }
-}
-        .images{
+        @-webkit-keyframes glow {
+            from {
+                text-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px rgb(255, 255, 255), 0 0 30px #538ea1, 0 0 40px #538ea1, 0 0 50px #538ea1, 0 0 60px #538ea1, 0 0 70px #538ea1;
+            }
+
+            /*to- #f3c03d ,from- #DAA520 */
+            to {
+                text-shadow: 0 0 20px rgb(255, 255, 255), 0 0 30px #70a7b7, 0 0 40px #70a7b7, 0 0 50px #70a7b7, 0 0 60px #70a7b7, 0 0 70px #70a7b7, 0 0 80px #70a7b7;
+            }
+        }
+
+        .images {
             background-color: blue;
-            height:100%;
-            width:100%;
+            height: 100%;
+            width: 100%;
             border-radius: 15%;
-            
+
         }
-        #box{
-          display: flex;
-          flex-wrap:wrap;
-          justify-content: space-evenly;
-           
+
+        #box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
         }
-   
-            
-        
-        #box1{
-         width: 31%;
-         height: 250px;
-         margin-bottom: 17px;
+
+
+
+        #box1 {
+            width: 31%;
+            height: 250px;
+            margin-bottom: 17px;
         }
     </style>
 </head>
+
 <body>
     <h1 class="glow">PRODUCTS</h1>
     <div id="box">
         <div id="box1">
-            <img src="images/Products/wet lamination.jpg" class="images">
+            <a href="Products-wetLaminations.html" target="_parent">
+                <img src="images/Products/wet lamination.jpg" class="images">
+            </a>
         </div>
         <div id="box1">
-            <img src="images/Products/thermal gloss.jpg" class="images">
+            <a href="Products-thermalLaminations.html" target="_parent">
+                <img src="images/Products/thermal gloss.jpg" class="images">
+            </a>
         </div>
         <div id="box1">
-            <img src="images/Products/pvc films.jpg" class="images">
+            <a href="products-pvcFilms.html" target="_parent">
+                <img src="images/Products/pvc films.jpg" class="images">
+            </a>
         </div>
         <div id="box1">
-            <img src="images/Products/fevicol 2000.jpg" class="images">
+            <a href="products-pidliteAdhesives.html" target="_parent">
+                <img src="images/Products/fevicol 2000.jpg" class="images">
+            </a>
         </div>
         <div id="box1">
-            <img src="images/Products/thermal matte.jpg" class="images">
+            <a href="products-specialityAdhesives.html" target="_parent">
+                <img src="images/Products/thermal matte.jpg" class="images">
+            </a>
         </div>
-      
+
     </div>
 
 </body>
+
 </html>
-    
