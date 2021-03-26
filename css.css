@@ -49,6 +49,7 @@ body {
 .topnav a:hover, .dropdown:hover .dropbtn {
     background-color: #ddd;
     color: black;
+    background-image: radial-gradient(transparent, transparent, rgb(121, 186, 207));
 }
 
 .topnav a.active {
