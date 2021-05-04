@@ -1,266 +1,109 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-      
-        <title>TAARUGEE: Gallery</title>
-      
-        <link rel="stylesheet" type="text/css" href="gallery-style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="css.css">
-        <link rel="icon" type="image/x-icon" href="favicon.png">
-      
-      </head>
-<style>
-body {
-  font-family: Verdana, sans-serif;
-  margin: 0;
-}
 
-* {
-  box-sizing: border-box;
-}
+<head>
+  <meta charset="UTF-8">
 
-.row > .column {
-  padding: 0 8px;
-}
+  <title>TAARUGEE: Gallery</title>
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+  <link rel="stylesheet" type="text/css" href="gallery-style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css.css">
+  <link rel="icon" type="image/x-icon" href="favicon.png">
 
-.column {
-  float: left;
-  width: 25%;
-}
+</head>
 
-/* The Modal (background) */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgb(45, 106, 127, 0.9);
-}
-
-/* Modal Content */
-.modal-content {
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  width: 90%;
-  max-width: 1200px;
-}
-
-/* The Close Button */
-.close {
-  color: white;
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #999;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.mySlides {
-  display: none;
-}
-
-.cursor {
-  cursor: pointer;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: rgb(121, 186, 207);
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-img {
-  margin-bottom: -4px;
-}
-
-.caption-container {
-  text-align: center;
-  background-color: black;
-  padding: 2px 16px;
-  color: white;
-}
-
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
-
-img.hover-shadow {
-  transition: 0.3s;
-}
-
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-</style>
 <body>
-    <div class="topnav" id="myTopnav">
+  <div class="topnav" id="myTopnav">
 
-        <!-- <h1 style="color: white;text-align: center;font-size: 3.5vw;font-family: 'Times New Roman', Times, serif; letter-spacing: 3px;">TAARUGEE ENTERPRISES</h1> -->
-        <p
-          style="color: white;text-align: center;font-size: 3.5vw;font-family: 'Times New Roman', Times, serif; letter-spacing: 3px;margin: 1px;margin-top: 20px;">
-          <img src="images/logo/TAARU_GEE_final-1-removebg-preview.png" />
-          <img src="images/logo/TAARU_GEE_final-removebg-preview.png" height: 50px
-            style="height:120px;float: right; position: absolute;left: 0px;top: 0px;" />
-        </p>
-        <br>
-        <div style="float: none;">
-    
-          <a href="index.html" style="width: 20%;"><i class="fa fa-fw fa-home"></i>Home</a>
-          <a href="AboutUs.html" style="width: 20%;"><i class="fa fa-fw fa-user"></i>About Us</a>
-    
-          <div class="dropdown" style="width: 20%;height: 48px;overflow: hidden;border-style: none;">
-            <button class="dropbtn" style="width: 100%;overflow: hidden;padding-bottom: 14px;text-align: center;">
-              <i class="fa fa-cart-plus"></i> Products&nbsp;
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content" style="width: 20%;">
-              <a href="Products-wetLaminations.html" class="center">Wet Laminations</a>
-              <a href="Products-thermalLaminations.html" class="center">Thermal laminations</a>
-              <a href="Products-pvcFilms.html" class="center">PVC Films</a>
-              <a href="Products-pidliteAdhesives.html" class="center">Pidlite Adhesives</a>
-              <a href="Products-specialityAdhesives.html" class="center">Speciality Adhesives</a>
-            </div>
-          </div>
-    
-          <a href="ContactUs.html" style="width: 20%;"><i class="fa fa-fw fa-envelope"></i> Contact us</a>
-          <a href="gallery2.html" style="width: 20%" class="active"><i class="fa fa-camera"></i> Gallery</a>
-    
+    <!-- <h1 style="color: white;text-align: center;font-size: 3.5vw;font-family: 'Times New Roman', Times, serif; letter-spacing: 3px;">TAARUGEE ENTERPRISES</h1> -->
+    <p
+      style="color: white;text-align: center;font-size: 3.5vw;font-family: 'Times New Roman', Times, serif; letter-spacing: 3px;margin: 1px;margin-top: 20px;">
+      <img src="images/logo/TAARU_GEE_final-1-removebg-preview.png" />
+      <img src="images/logo/TAARU_GEE_final-removebg-preview.png" height: 50px
+        style="height:120px;float: right; position: absolute;left: 0px;top: 0px;" />
+    </p>
+    <br>
+    <div style="float: none;">
+
+      <a href="index.html" style="width: 20%;"><i class="fa fa-fw fa-home"></i>Home</a>
+      <a href="AboutUs.html" style="width: 20%;"><i class="fa fa-fw fa-user"></i>About Us</a>
+
+      <div class="dropdown" style="width: 20%;height: 48px;overflow: hidden;border-style: none;">
+        <button class="dropbtn" style="width: 100%;overflow: hidden;padding-bottom: 14px;text-align: center;">
+          <i class="fa fa-cart-plus"></i> Products&nbsp;
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" style="width: 20%;">
+          <a href="Products-wetLaminations.html" class="center">Wet Laminations</a>
+          <a href="Products-thermalLaminations.html" class="center">Thermal laminations</a>
+          <a href="Products-pvcFilms.html" class="center">PVC Films</a>
+          <a href="Products-pidliteAdhesives.html" class="center">Pidlite Adhesives</a>
+          <a href="Products-specialityAdhesives.html" class="center">Speciality Adhesives</a>
         </div>
       </div>
-    
-      <div id="mainBody">
-        <br>
-        <div class="center">
-          <h2>Gallery</h2>
-          <p>Click to enlarge</p>
-        </div>
 
-<div class="row">
-  <div class="column">
-    <img src="images/Products/wet lamination.jpg" alt="Wet Lamination" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img src="images/Products/thermal gloss.jpg" alt="Thermal Gloss" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img  src="images/Products/pidilam i 24.jpg" alt="pidilam-i-24" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img src="images/Products/fevicol 2000.jpg" alt="fevicol 2000" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-  </div>
-</div>
+      <a href="ContactUs.html" style="width: 20%;"><i class="fa fa-fw fa-envelope"></i> Contact us</a>
+      <a href="gallery.html" style="width: 20%" class="active"><i class="fa fa-camera"></i> Gallery</a>
 
-<div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-  <div class="modal-content">
-
-    <div class="mySlides">
-      <div class="numbertext">1 / 4</div>
-      <img src="images/Products/wet lamination.jpg" alt="Wet Lamination" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">2 / 4</div>
-      <img src="images/Products/thermal gloss.jpg" alt="Thermal Gloss"style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">3 / 4</div>
-      <img  src="images/Products/pidilam i 24.jpg" alt="pidilam-i-24" style="width:100%">
-    </div>
-    
-    <div class="mySlides">
-      <div class="numbertext">4 / 4</div>
-      <img src="images/Products/fevicol 2000.jpg" alt="fevicol 2000" style="width:100%">
-    </div>
-    
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-    <div class="caption-container">
-      <p id="caption" style="font-weight: bold;"></p>
-    </div>
-
-
-    <div class="column">
-      <img class="demo cursor" src="images/Products/wet lamination.jpg" alt="Wet Lamination" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="images/Products/thermal gloss.jpg" alt="Thermal Gloss" style="width:100%" onclick="currentSlide(2)" alt="Snow">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="images/Products/pidilam i 24.jpg" alt="pidilam-i-24"style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="images/Products/fevicol 2000.jpg" alt="fevicol 2000"style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
     </div>
   </div>
-</div>
 
+  <div id="mainBody">
+    <br>
+    <div class="center">
+      <h2>Gallery</h2>
+      <p>Click to enlarge</p>
+    </div>
 
-<!-- end gallery -->
+    <!-- The four columns -->
+    <div class="row">
+      <div class="column">
+        <img src="images/Products/wet lamination.jpg" alt="Wet Lamination" style="width:100%" onclick="enlarge(this);">
+      </div>
+      <div class="column">
+        <img src="images/Products/thermal gloss.jpg" alt="Thermal Gloss" style="width:100%" onclick="enlarge(this);">
+      </div>
+      <div class="column">
+        <img src="images/Products/pvc films.jpg" alt="PVC Films" style="width:100%" onclick="enlarge(this);">
+      </div>
+      <div class="column">
+        <img src="images/Products/fevicol 2000.jpg" alt="fevicol 2000" style="width:100%" onclick="enlarge(this);">
+      </div>
+      <div class="column">
+        <img src="images/Products/fevicol cpw.png" alt="Fevicol cpw" style="width:100%" onclick="enlarge(this);">
+      </div>
+      <div class="column">
+        <img src="images/Products/fevicol hp 002.jpg" alt="Fevicol hp 002" style="width:100%" onclick="enlarge(this);">
+      </div>
+      <div class="column">
+        <img src="images/Products/pidilam lm 26.jpg" alt="Pidilam-lm-26" style="width:100%" onclick="enlarge(this);">
+      </div>
+      <div class="column">
+        <img src="images/Products/fevicol 282.jpg" alt="Fevicol-282" style="width:100%" onclick="enlarge(this);">
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <img src="images/Products/pidilam i 24.jpg" alt="pidilam-i-24" style="width:100%" onclick="enlarge(this);">
+      </div>
+      <div class="column">
+        <img src="images/Products/thermal matte.jpg" alt="Thermal Matte" style="width:100%" onclick="enlarge(this);">
+      </div>
+      <div class="column">
+        <img src="images/Products/thermal gloss.jpg" alt="Thermal Gloss" style="width:100%" onclick="enlarge(this);">
+      </div>
+      <div class="column">
+        <img src="images/logo/TAARU GEE final.jpg" alt="TAARU GEE" style="width:100%" onclick="enlarge(this);">
+      </div>
+    </div>
 
-<br>
+    <div class="container">
+      <span onclick=" this.parentElement.style.display='none'" class=" closebtn">&times;</span>
+      <img id="expandedImg" style="width:100%">
+      <div id="imgtext"></div>
+    </div>
+    <br>
   </div>
   <!-- footer -->
   <div id="footer" class="footer">
@@ -289,45 +132,18 @@ img.hover-shadow {
   </div>
 
   <script src="myScript.js"></script>
+  <script>
+    function enlarge(imgs) {
+      var expandImg = document.getElementById("expandedImg");
+      var imgText = document.getElementById("imgtext");
+      expandImg.src = imgs.src;
+      imgText.innerHTML = imgs.alt;
+      expandImg.parentElement.style.display = "block";
 
-<script>
-function openModal() {
-  document.getElementById("myModal").style.display = "block";
-}
-
-function closeModal() {
-  document.getElementById("myModal").style.display = "none";
-}
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-</script>
-    
+      imgText.parentElement.style.display = "flex";
+    }
+    setMinHeigt();
+  </script>
 </body>
+
 </html>
