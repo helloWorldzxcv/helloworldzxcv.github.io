@@ -105,6 +105,13 @@
     </div>
     <br>
   </div>
+
+  <!-- SCROLL DOWN  -->
+  <div id = "scroll" class= "array bounce"style="position: fixed; bottom: 40px; width: 100%; text-align: center; color: rgb(61 123 142); display: none">
+      Scroll Down to View Enlarged Image &emsp;<span class="arrow bounce"></span><a class="fa fa-arrow-down fa-2x"></a>
+  </div>
+
+
   <!-- footer -->
   <div id="footer" class="footer">
     <h2> CONTACT DETAILS </h2>
@@ -141,6 +148,9 @@
       expandImg.parentElement.style.display = "block";
 
       imgText.parentElement.style.display = "flex";
+
+      // TODO: show scroll down option
+      document.getElementById("scroll").style.display = "block";
     }
     setMinHeigt();
   </script>
